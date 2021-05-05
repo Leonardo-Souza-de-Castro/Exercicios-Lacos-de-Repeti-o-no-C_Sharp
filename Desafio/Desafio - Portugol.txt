@@ -1,0 +1,14 @@
+programa{
+    inteiro valor1
+    interiro valor2
+    inteiro valor3
+
+    funcao inicio(){
+        faça{
+            valor3 = valor1 + valor2
+            escreva (valor3 + ", ")
+            valor1 = valor2
+            valor2 = valor3
+        } enquanto (valor2 <= 500)
+    }
+}

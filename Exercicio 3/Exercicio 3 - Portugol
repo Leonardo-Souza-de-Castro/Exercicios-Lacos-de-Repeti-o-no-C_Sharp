@@ -1,0 +1,62 @@
+programa{
+    caracter nome 
+    inteiro idade
+    real salario
+    caracter estado_civil
+    logico formulario
+
+    funcao inicio{
+        faça{
+            formulario = falso
+            escreva ("Insira Seu Nome" + "\n")
+            leia(nome)
+
+            escreva("Insira Sua Idade" + "\n")
+            leia(idade)
+
+            escreva("Insira Seu Sálario" + "\n")
+            leia(salario)
+
+            escreva("Insira seu Estado Civil c(casado(a)) s(solteiro(s)) v(viuvo(a)) d(divorciado(a))")
+            ler(estado_civil)
+
+            se (nome == ""){
+                escreva(""O nome não pode estar vazio \nPor Favor Digite Novamente!"")
+                formulario = verdadeiro
+            }
+
+            se ((idade < 0) || (idade > 150)){
+                escreva ("Idade Invalida \nDigite Novamente")
+                formulario = verdadeiro
+            }
+
+            se (salario == 0){
+                escreva ("Valor de Salario Invalido \nDigite Novamente")
+                formulario = verdadeiro
+            }
+
+            escolha (estado_civil){
+                caso "c":
+                    escreva ("Formulario preenchido com sucesso!!" + \n)
+                    pare
+
+                caso "s":
+                    escreva ("Formulario preenchido com sucesso!!" + \n)
+                    pare
+
+                caso "v":
+                    escreva ("Formulario preenchido com sucesso!!" + \n)
+                    pare
+
+                caso "d":
+                    escreva ("Formulario preenchido com sucesso!!" + \n)
+                    pare
+
+                caso contrario:
+                    escreva ("Estado Civil Invalido Digite Novamente")
+                    formulario = verdadeiro
+                    pare    
+            }
+        } enquanto (formulario == verdadeiro)
+    }
+}

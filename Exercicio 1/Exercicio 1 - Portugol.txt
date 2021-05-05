@@ -1,0 +1,19 @@
+programa {
+
+    real numero
+
+    funcao inicio (){
+        faça {
+            escreva ("Insisra um numero de 1 a 10" + "\n")
+            leia (numero)
+
+            se (numero > 10){
+                escreva("Número invalido Digite Novamente" + "\n")
+            } 
+            senao{
+                escreva("Número Valido" + "\n")
+                escreva("FIM DA EXECUSÃO" + "\n")
+            }
+        } enquanto (numero > 10)
+    }
+}

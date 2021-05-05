@@ -1,0 +1,25 @@
+programa{
+    caracter senha
+    caracter email
+
+    funcao inicio(){
+        faça{
+            escreva ("Insira Seu Nome de Usuario" + "\n")
+            leia(email)
+            escreva ("Insira sua Senha" + "\n")
+            leia(senha)
+
+            se(senha == ""){
+                senha = email
+            }
+            
+            se (senha == email){
+                escreva ("Senha inválida" + "\n")
+            }
+            senao{
+                escreva("Logado com sucesso!!" + "\n")
+            }
+        } enquanto (senha == email)
+    }
+
+}
